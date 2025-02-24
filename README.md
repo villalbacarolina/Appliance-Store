@@ -13,11 +13,14 @@ This backend application implements an appliance store with a microservices arch
 
 **Language**
 - Java
+
 **Frameworks**
 - Spring Boot
 - Spring Cloud
+
 **Dependencies**
 - Maven
+
 **Design**
 - SOLID
 - Design patterns
@@ -27,7 +30,9 @@ This backend application implements an appliance store with a microservices arch
         - Resilience4J
     - Service Registry and Service Discovery
         - Eureka Server
+
 **Containers**
 - Docker
+
 **Testing**
 - Postman
