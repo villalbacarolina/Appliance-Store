@@ -1,18 +1,27 @@
 package com.appliance_store.shopping_cart.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.util.LinkedList;
+import java.util.List;
 
 @Entity
-@AllArgsConstructor @NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class ShoppingCart {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private LinkedList<Item> items;
-    private BigDecimal totalPrice;
+
+    @ElementCollection
+    private List<Item> items = new LinkedList<>();
+
+    private BigDecimal totalPrice = BigDecimal.ZERO;
 }
