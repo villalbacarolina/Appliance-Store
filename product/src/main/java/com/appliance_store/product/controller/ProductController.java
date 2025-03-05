@@ -31,11 +31,11 @@ public class ProductController {
         return "Product deleted successfully.";
     }
 
-    @PutMapping("/products/edit/{id_originalProduct}")
+    @PutMapping("/edit/{id_originalProduct}")
     public Product editProduct(@PathVariable Long id_originalProduct,
                                @RequestBody Product newProduct){
         productService.editProduct(id_originalProduct, newProduct);
-        
+
         return productService.findProduct(id_originalProduct);
     }
 

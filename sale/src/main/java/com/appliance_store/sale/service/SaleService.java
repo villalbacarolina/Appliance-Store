@@ -34,7 +34,7 @@ public class SaleService implements ISaleService{
     }
 
     @Override
-    public void editSale(Sale s) {
+    public void editSale(Long id, Sale s) {
         this.saveSale(s);
     }
 }
