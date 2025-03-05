@@ -34,7 +34,7 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public void editProduct(Product p) {
+    public void editProduct(Long id, Product p) {
         this.saveProduct(p);
     }
 }

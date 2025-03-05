@@ -8,5 +8,5 @@ public interface IProductService {
     public void saveProduct(Product p);
     public void deleteProduct(Long id);
     public Product findProduct(Long id);
-    public void editProduct(Product p);
+    public void editProduct(Long id, Product p);
 }
