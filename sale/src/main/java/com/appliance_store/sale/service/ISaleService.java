@@ -4,6 +4,7 @@ import com.appliance_store.sale.model.Sale;
 
 import java.util.List;
 
+
 public interface ISaleService {
     public List<Sale> getSales();
     public void saveSale(Sale s);

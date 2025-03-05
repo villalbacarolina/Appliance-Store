@@ -4,6 +4,7 @@ import com.appliance_store.shopping_cart.model.ShoppingCart;
 
 import java.util.List;
 
+
 public interface IShoppingCartService {
     public List<ShoppingCart> getShoppingCart();
     public void saveShoppingCart(ShoppingCart sc);
